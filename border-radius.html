@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Border Radius CSS Generator | CSSmatic</title>
+    <link rel='stylesheet' type='text/css' href='all.css'>
+	<link rel='stylesheet' type='text/css' href='jquery.ui.css'>
+	<link rel='stylesheet' type='text/css' href='colorpicker.css'>
+	<script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/colorpicker.js"></script>
+    <script src="js/borderRadius.js"></script>
+
+</head>
+<body>
+	<div id="wrapper" class="border">
+		<div class="h1bar clearfix">
+			<h1>Border Radius</h1>
+		</div>	
+
+		<div class="twocolumns">
+			<div class="left-column">
+				<div class="box">
+					<div class="holder">
+						<div class="frame">
+							<!--block1-->
+							<div class="setting-block">
+								<div class="row">
+									<label for="all-corners">All Corners</label>
+									<label class="align-right" for="all-corners">px</label>
+									<div class="text-1">
+										<input id="all-corners" type="text" value="0" />
+									</div>
+								</div>
+								<div id="slider-all-corners" class="slider-bar large ui-slider ui-slider-horizontal ui-widget  ui-corner-all">
+									<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left:0%;"></a>
+								</div>
+							</div>
+							<!--block2-->
+							<div class="setting-block">
+	                        	<div class="row">
+									<label for="top-left">top-left</label>
+									<label class="align-right" for="all-corners">px</label>
+									<div class="text-1">
+										<input id="top-left" type="text" value="0" />
+									</div>
+								</div>
+								<div id="slider-top-left" class="slider-bar large ui-slider ui-slider-horizontal ui-widget  ui-corner-all">
+									<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left:0%;"></a>
+								</div>
+								<div class="row mtop15">
+		                            <label for="top-right">Top Right</label>
+		                            <label class="align-right" for="top-right">px</label>
+		                            <div class="text-1">
+		                                <input id="top-right" type="text" value="10" />
+		                            </div>	
+                        		</div>
+                        		<div id="slider-top-right" class="slider-bar large ui-slider ui-slider-horizontal ui-widget  ui-corner-all">
+                        			<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+                        		</div>
+                        		<!-- <div id="slider-top-right" class="slider-bar large"></div> -->
+		                        <div class="row mtop15">
+		                            <label for="bottom-left">Bottom Left</label>
+		                            <label class="align-right" for="bottom-left">px</label>
+		                            <div class="text-1">
+		                                <input id="bottom-left" type="text" value="10" />
+		                            </div>
+		                        </div>
+		                        <div id="slider-bottom-left" class="slider-bar large ui-slider ui-slider-horizontal ui-widget  ui-corner-all">
+		                        	<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+		                        </div>
+		                        <!-- <div id="slider-bottom-left" class="slider-bar large"></div> -->
+		                        <div class="row mtop15" >
+		                            <label for="bottom-right">Bottom Right</label>
+		                            <label class="align-right" for="bottom-right">px</label>
+		                            <div class="text-1">
+		                                <input id="bottom-right" type="text" value="10" />
+		                            </div>
+		                        </div>
+		                        <div id="slider-bottom-right" class="slider-bar large ui-slider ui-slider-horizontal ui-widget ui-corner-all">
+		                        	<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+		                        </div>
+		                        <!-- <div id="slider-bottom-right" class="slider-bar large"></div> -->
+							</div>	
+						</div>	
+					</div>	
+				</div>	
+				<!--box2-->
+				<div class="box">
+					<div class="holder">
+						<div class="frame">
+							<!--block1-->
+							<div class="setting-block">
+								<div class="row">
+									<label for="border-width">Border Width</label>
+									<label class="align-right" for="border-width">px</label>
+									<div class="text-1">
+										<input id="border-width" type="text" value="0" />
+									</div>
+								</div>
+								<div id="slider-border-width" class="slider-bar large ui-slider ui-slider-horizontal ui-widget  ui-corner-all">
+									<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left:0%;"></a>
+								</div>
+							</div>
+							<!--block2-->
+							<div class="setting-block">
+	                        	<div class="row">
+	                        		<label for="vertical-length">Border Style</label>
+	                        		<div class="text-1">
+	                        			<select id="select-border">
+	                        				<option value="solid" selected>solid</option>
+	                        				<option value="dotted">dotted</option>
+	                        				<option value="dashed" >dashed</option>
+	                        				<option value="double">double</option>
+	                        				<option value="groove">groove</option>
+	                        				<option value="ridge">ridge</option>
+	                        				<option value="inset">inset</option>
+	                        				<option value="outset">outset</option>
+	                        				<option value="inherit">inherit</option>
+	                        				<option value="hidden">hidden</option>
+	                        				<option value="none">none</option>
+	                        			</select>	
+	                        		</div>	
+	                        	</div>	
+	                        	<div class="row">
+	                        		<label for="br-color">Border Color</label>
+	                        		<div class="text-2">
+	                        			<input id="br-color" type="text" value="#000000" />
+	                        		</div>	
+	                        		<a id="br-color-button" class="btn-color color-3" href="javascript:;">
+                                		<span>color</span>
+                            		</a>
+	                        	</div>
+	                        	<div class="row">
+	                        		<label for="br-background-color">Background Color</label>
+	                        		<div class="text-2">
+	                        			<input id="br-background-color" type="text" value="#e7a61a" />
+	                        		</div>	
+	                        		<a id="br-background-color-button" class="btn-color color-4" href="javascript:;">
+                                		<span>color</span>
+                            		</a>
+	                        	</div>		
+							</div>	
+						</div>	
+					</div>	
+				</div>		
+				<!--end box2-->
+			</div>
+
+			<div class="right-column">
+				<div class="box-wrap">
+					<div id="border-radius-code" class="content">
+						<div>border-radius: 0px 0px 0px 0px;</div>
+						<div>-moz-border-radius: 0px 0px 0px 0px;</div>
+						<div>-webkit-border-radius: 0px 0px 0px 0px;</div>
+						<div>border: 0px solid #000000;</div>
+					</div>	
+					<div id="border-radius-panel" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border: 0px solid rgb(0, 0, 0); background-color: rgb(231, 166, 26);">
+						<!--content-->
+					</div>	
+				</div>	
+				
+			</div>	
+		</div>	
+	</div> <!--wrapper-->		
+	<div class="ribbon">
+		<a href="http://github.com/Ailocodjam" title="Fork me on GitHub!" rel="me">Fork me on GitHub!</a>
+	</div>	
+</body>
+</html>    
